@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,35 +9,158 @@
   <link rel="stylesheet" href="css/utils.css">
   <script src="script.js" defer></script>
 </head>
-<body class="font-color-primary">
 
-  <div class="container flex justify-content-center align-items-center">
+<body class="font-color-primary noselect">
 
-    <div class="left border-white">
+  <!-- /// Main container inside which everything is -->
+  <div class="container flex justify-content-center align-items-center flex-gap-5">
 
+
+    <!-- Left part -->
+    <div class="left flex flex-direction-column">
+
+      <!-- Nav part containing logo and LIs -->
       <nav class="bgcolor-primary rounded-8">
         <div class="logo font-color-red">Uwufy</div>
 
         <div>
           <ul>
-            <li class="flex align-items-center flex-gap-10"><img src="images/home.svg" alt=""> Home</li>
-            <li class="flex align-items-center flex-gap-10"><img src="images/search.svg" alt=""> Search</li>
+            <li class="flex align-items-center flex-gap-10 font-semi-bold rounded-8"><img src="images/home.svg"
+                class="supporting-image"=""> Home</li>
+            <li class="flex align-items-center flex-gap-10 font-semi-bold rounded-8"><img src="images/search.svg"
+                class="supporting-image" alt=""> Search</li>
           </ul>
         </div>
 
       </nav>
 
-      <div class="library bgcolor-primary rounded-8">
-        Very cool library
+
+      <!-- Library part -->
+      <div class="library bgcolor-primary rounded-8 flex flex-direction-column flex-gap-10">
+
+        <!-- /// Library heading -->
+        <div class="library-heading flex align-items-center flex-gap-10">
+          <img src="images/bolt.svg" class="supporting-image" alt="">
+          <h2 class="font-semi-bold">
+            Very cool library
+          </h2>
+        </div>
+
+        <!-- /// Library card container and the cards -->
+        <div class="library-items-container flex flex-direction-column flex-gap-5">
+          <div class="library-card rounded-8">
+            <p class="library-card-song-name">Song 1</p>
+            <p class="library-card-artist-name">Insane</p>
+          </div>
+          <div class="library-card rounded-8">
+            <p class="library-card-song-name">Song 1</p>
+            <p class="library-card-artist-name">Insane</p>
+          </div>
+          <div class="library-card rounded-8">
+            <p class="library-card-song-name">Song 1</p>
+            <p class="library-card-artist-name">Insane</p>
+          </div>
+          <div class="library-card rounded-8">
+            <p class="library-card-song-name">Song 1</p>
+            <p class="library-card-artist-name">Insane</p>
+          </div>
+          <div class="library-card rounded-8">
+            <p class="library-card-song-name">Song 1</p>
+            <p class="library-card-artist-name">Insane</p>
+          </div>
+          <div class="library-card rounded-8">
+            <p class="library-card-song-name">Song 1</p>
+            <p class="library-card-artist-name">Insane</p>
+          </div>
+          <div class="library-card rounded-8">
+            <p class="library-card-song-name">Song 1</p>
+            <p class="library-card-artist-name">Insane</p>
+          </div>
+          <div class="library-card rounded-8">
+            <p class="library-card-song-name">Song 1</p>
+            <p class="library-card-artist-name">Insane</p>
+          </div>
+          <div class="library-card rounded-8">
+            <p class="library-card-song-name">Song 1</p>
+            <p class="library-card-artist-name">Insane</p>
+          </div>
+          <div class="library-card rounded-8">
+            <p class="library-card-song-name">Song 1</p>
+            <p class="library-card-artist-name">Insane</p>
+          </div>
+          <div class="library-card rounded-8">
+            <p class="library-card-song-name">Song 1</p>
+            <p class="library-card-artist-name">Insane</p>
+          </div>
+          <div class="library-card rounded-8">
+            <p class="library-card-song-name">Song 1</p>
+            <p class="library-card-artist-name">Insane</p>
+          </div>
+          <div class="library-card rounded-8">
+            <p class="library-card-song-name">Song 1</p>
+            <p class="library-card-artist-name">Insane</p>
+          </div>
+          <div class="library-card rounded-8">
+            <p class="library-card-song-name">Song 1</p>
+            <p class="library-card-artist-name">Insane</p>
+          </div>
+          <div class="library-card rounded-8">
+            <p class="library-card-song-name">Song 1</p>
+            <p class="library-card-artist-name">Insane</p>
+          </div>
+        </div>
       </div>
+
+
+      <!-- /// Footer of left section -->
+      <footer class="bgcolor-primary rounded-8">
+        <p>Mady by Insane <3 </p>
+            <div class="footer-links">
+              <ul class="flex flex-gap-20 flex-wrap">
+                <li><a href="">License</a></li>
+                <li><a href="">About the site</a></li>
+                <li><a href="">About me</a></li>
+                <li><a href="">My main website</a></li>
+              </ul>
+            </div>
+      </footer>
 
     </div>
 
-    <div class="right border-white">
+
+
+    <!-- //// Right section -->
+    <div class="right flex flex-direction-column flex-gap-5">
+
+      <header class="bgcolor-primary flex align-items-center rounded-8 flex-justify-content-space-between">
+
+        <div class="navigation-buttons-container">
+          <ul class="list-style-none flex flex-gap-10">
+            <li class="navigation-button">&lt;</li>
+            <li class="navigation-button">&gt;</li>
+          </ul>
+        </div>
+        <div class="user-apps">
+          <ul class="list-style-none">
+            <li></li>
+            <li><img src="images/user.svg" class="supporting-image" alt=""></li>
+          </ul>
+        </div>
+
+      </header>
+
+      <!-- Actual content -->
+      <div class="content bgcolor-primary"></div>
+
+      <!-- Player control -->
+      <div class="player-controls bgcolor-primary">
+
+      </div>
 
     </div>
 
   </div>
 
 </body>
+
 </html>

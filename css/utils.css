@@ -18,6 +18,10 @@
   color: red;
 }
 
+.font-semi-bold {
+  font-weight: 500;
+}
+
 .border-black {
   border: 4px solid black;
 }
@@ -42,6 +46,56 @@
   align-items: center;
 }
 
+.flex-gap-5 {
+  gap: 5px;
+}
+
 .flex-gap-10 {
   gap: 10px;
+}
+
+.flex-gap-20 {
+  gap: 20px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-justify-content-space-between {
+  justify-content: space-between;
+}
+
+.supporting-image {
+  width: 2.1rem;
+}
+
+.filter-font-color-secondary {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(94%) saturate(3814%) hue-rotate(307deg) brightness(84%) contrast(96%);
+}
+
+.filter-red {
+  filter: brightness(0) saturate(100%) invert(22%) sepia(74%) saturate(6085%) hue-rotate(354deg) brightness(94%) contrast(127%);
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.padding-5 {
+  padding: 5px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }

@@ -1,58 +1,210 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 
 *, *::after, *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: "Ubuntu";
+  font-weight: normal;
+}
+
+
+html {
+  font-size: 10px;
 }
 
 :root {
-  --primary-bg-color: #2E0249;
-  --secondary-bg-color: #570A57;
-  --primary-font-color: #F806CC;
-  --secondary-font-color: #A91079;
+  --bgcolor-primary: #2E0249;
+  --bgcolor-secondary: #570A57;
+  --font-color-primary: #F806CC;
+  --font-color-secondary: #A91079;
+  --filter-hover-primary: brightness(0) saturate(100%) invert(29%) sepia(95%) saturate(7485%) hue-rotate(302deg) brightness(103%) contrast(106%);
+  --filter-active-primary: brightness(0) saturate(100%) invert(92%) sepia(39%) saturate(6423%) hue-rotate(287deg) brightness(102%) contrast(125%);;
+  --hover-primary: var(--bgcolor-secondary);
+  --active-primary: pink;
 }
+
 
 body {
   background-color: black;
-  font: 10px;
+  font-size: 10px;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 2.0rem;
+}
+
+a {
+  text-decoration: none;
+  color: pink;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: var(--font-color-primary);
+}
+
+.container {
+  font-size: 1.2rem;
+  height: 100vh;
 }
 
 .left {
   width: 20vw;
-  margin-right: 10px;
   height: 100vh;
-  padding: 5px;
+  padding: 5px 0px 5px 5px;
 }
 
-nav {
+.left nav {
   padding: 5px 10px 15px;
   margin-bottom: 5px;
 }
 
+.left img {
+  fill: pink;
+}
 
-nav .logo {
+.left nav .logo {
   font-family: "Pacifico";
-  font-size: 32px;
+  font-size: 3.2rem;
+  margin-bottom: 5px;
 }
 
-nav img {
-  width: 25px;
-}
 
-nav li {
+.left nav li {
   list-style: none;
-  margin-top: 5px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.left nav li:hover {
+  background-color: var(--hover-primary);
+}
+
+.left nav li:active {
+  background-color: var(--active-primary);
+  color: black;
+}
+
+.left .library {
+  padding: 10px 10px 15px;
+  margin-bottom: 5px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+
+.left .library-heading {
+  margin-bottom: 10px;
+}
+
+.left .library-items-container {
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.left .library .library-card {
+  border: 2px solid var(--bgcolor-secondary);
+  padding: 10px 10px;
   cursor: pointer;
 }
 
-.library {
-  padding: 10px 10px 15px;
+.left .library .library-card:hover {
+  background-color: var(--hover-primary);
+}
+
+.left .library .library-card:active {
+  background-color: var(--active-primary);
+  color: black;
+}
+
+.left .library-card .library-card-song-name {
+  font-size: 1.5rem;
+}
+
+.left footer {
+  padding: 15px 10px 15px;
+}
+
+
+.left footer ul {
+  margin-top: 15px;
+  list-style: none;
 }
 
 
 .right {
-  width: 80vw;
+  flex-grow: 1;
   height: 100vh;
+  padding: 5px 5px 5px 0px;
 }
+
+.right header {
+  padding: 10px 10px 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.right header .navigation-button {
+  background-color: black;
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: 700;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right header .navigation-button:hover {
+  background-color: var(--font-color-secondary);
+  background-color: var(--font-color-primary);
+  color: black;
+}
+
+.right header .navigation-button:active {
+  background-color: pink;
+  color: black;
+}
+
+.right header img {
+  width: 35px;
+}
+
+.right header img:hover {
+  filter: var(--filter-hover-primary);
+}
+
+.right header img:active {
+  filter: var(--filter-active-primary);
+}
+
+
+
+
+/* Scrollbar styling */
+
+::-webkit-scrollbar {
+    width: 4px;
+    background-color: var(--font-color-secondary);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: pink;
+} 
